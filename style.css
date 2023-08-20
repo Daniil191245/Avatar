@@ -54,7 +54,7 @@ ul,ol{
 /*  inter: 300 400 600 HeadlandOne:400  Hammersmith One: 400*/
 .header{
     position: absolute;
-    top: 20px;
+    top: 10px;
     left: 50%;
     transform: translateX(-50%);
 }
@@ -73,9 +73,11 @@ ul,ol{
     display: flex;
 }
 .list-navigation>li:not(:last-child){
-    margin-right: 38px;
+    margin-right: 40px;
 }
 .item-nav{
+    display: block;
+    width: 80px;
 font-family: Inter;
 font-size: 20px;
 font-style: normal;
@@ -143,6 +145,15 @@ input:checked + .switch::before {
     background: #fff;
 }
 /* styling hero section */
+.section-hero::before{
+content: "";
+display: block;
+position: relative;
+bottom: 95px;
+width: 100%;
+height: 3px;
+background-color: var(--white-color);
+}
 .section-hero{
     padding: 200px 0px;
     background-color: var(--backgraond-img);
@@ -311,7 +322,7 @@ color: var(--name-quotes-color);
 }
 /* styling footer */
 .footer{
-    padding: 60px 0px;
+    padding: 30px 0px;
     background-color: var(--backgraond-img);
     background-image: url(./img-avatar/background-footer.jpg);
     background-size: cover;
@@ -321,6 +332,16 @@ color: var(--name-quotes-color);
     display: flex;
     align-items: center;
     margin-bottom: 37px;
+}
+.footer-contact::before{
+    content: "";
+    display: block;
+    position: relative;
+    top: 20px;
+    left: 22%;
+    width: 2px;
+    height: 200px;
+    background-color: var(--white-color);
 }
 .lofotype-footer{
    margin-right: 120px;
