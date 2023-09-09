@@ -121,7 +121,7 @@ color: var(--white-color);
 .switch {
     display: inline-block;
     position: relative;
-    width: 41px;
+    width: 38px;
     height: 20px;
     border-radius: 20px;
     border: 1px solid var(--white-color);
@@ -132,7 +132,7 @@ color: var(--white-color);
 .switch::before {
     content: '';
     position: absolute;
-    top: 1.5px;
+    top: 1.6px;
     left: 2px;
     width: 15px;
     height: 15px;
@@ -141,7 +141,7 @@ color: var(--white-color);
     transition: left 0.28s cubic-bezier(0.4, 0, 0.2, 1), background 0.28s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.28s cubic-bezier(0.4, 0, 0.2, 1);
 }
 input:checked + .switch::before {
-    left: 18px;
+    left: 20px;
     background: #fff;
 }
 /* styling hero section */
